@@ -50,15 +50,15 @@ class SendEmail(object):
 
 
         if tq2 <= 10:
-            dressingIndex = dressingIndex + '早晚气温低于10℃！穿厚点的外套加毛衫或者其他相等的衣物！<br>'
+            dressingIndex = dressingIndex + '早晚气温低于10℃！要注意保暖！<br>'
         else:
-            dressingIndex = dressingIndex + '早晚气温高于10℃！穿薄点的外套加毛衫或者其他相等的衣物！<br>'
+            dressingIndex = dressingIndex + '早晚气温高于10℃！穿薄点的衣物！<br>'
 
 
         if tq1 >= 20:
-            dressingIndex = dressingIndex + '今天最高气温高于20℃！可以脱掉外套！<br>'
+            dressingIndex = dressingIndex + '今天最高气温高于20℃！可以适当减少衣物！<br>'
         else:
-            dressingIndex = dressingIndex + '今天最高气温低于20℃！脱外套前请三思！<br>'
+            dressingIndex = dressingIndex + '今天最高气温低于20℃！减少衣物前请三思！<br>'
 
         print(dressingIndex)
         da = []
@@ -71,7 +71,7 @@ class SendEmail(object):
         passwd = self.password  # 填入发送方邮箱的授权码(填入自己的授权码，相当于邮箱密码)
         msg_to = self.msg_to  # 收件人邮箱
 
-        subject = "一封温暖的天气预报——来自豪哥哥"  # 主题
+        subject = "一封温暖的天气预报"  # 主题
 
         message = '<br>'.join(da)
         print(message)

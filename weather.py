@@ -1,6 +1,5 @@
 import requests                 #用来抓取网页上html的源代码
 from bs4 import BeautifulSoup   #抓取源代码中标签的内容
-from getCityCode import GetCityCode
 
 class Weather(object):
     def GetContent(self, url):
@@ -9,7 +8,6 @@ class Weather(object):
         :param url:
         :return:
         '''
-        #通过fiddler查看headers
         header={
            'Accept': 'text / html, application / xhtml + xml, application / xml;q = 0.9, image / webp, image / apng, * / *;q = 0.8',
            'Accept - Encoding': 'gzip, deflate',

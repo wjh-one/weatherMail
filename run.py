@@ -2,12 +2,11 @@ from getCityCode import GetCityCode
 from weather import Weather
 from sendEmail import SendEmail
 
-# city = '上海'
-city = '西安'
-msg_to = ['827110171@qq.com', '18829069704@163.com', '1545525016@qq.com']
-# msg_to = ['827110171@qq.com']
-msg_from = 'wjh_dan@163.com'
-password = 'VCGSSUCOBYXVORQN'
+city = '上海'
+# city = '西安' # 要查询的城市地址
+msg_to = ['', '']  # 收件人邮箱，可以写多个。
+msg_from = ''   # 发件人邮箱
+password = ''  # 发件人邮箱授权码
 
 code = GetCityCode(city).getCode()
 print(code)
