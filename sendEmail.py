@@ -46,7 +46,7 @@ class SendEmail(object):
             dressingIndex = dressingIndex + "多云，舒服的一天<br>"
 
         if tq0.__contains__('晴'):
-            dressingIndex = dressingIndex + "晴天，故事的小黄花开始飘起来啦<br>"
+            dressingIndex = dressingIndex + "晴天<br>"
 
 
         if tq2 <= 10:
